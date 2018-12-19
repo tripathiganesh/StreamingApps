@@ -16,7 +16,7 @@ import org.apache.spark.streaming.kafka010.ConsumerStrategies.Subscribe
 
 val ssc = new StreamingContext(sc, Seconds(10))
 
-val kafkaParams = Map[String, Object]( "bootstrap.servers" -> "nightly513-1.vpc.cloudera.com:9093", "key.deserializer" -> classOf[StringDeserializer], "value.deserializer" -> classOf[StringDeserializer], "group.id" -> "testgroup", "auto.offset.reset" -> "latest", "enable.auto.commit" -> (false: java.lang.Boolean) ,"sasl.kerberos.service.name" -> "kafka", "security.protocol" -> "SASL_SSL", "ssl.truststore.location" -> "/etc/cdep-ssl-conf/CA_STANDARD/truststore.jks", "ssl.truststore.password" -> "cloudera", "ssl.key.password" -> "cloudera")
+val kafkaParams = Map[String, Object]( "bootstrap.servers" -> "host:9093", "key.deserializer" -> classOf[StringDeserializer], "value.deserializer" -> classOf[StringDeserializer], "group.id" -> "testgroup", "auto.offset.reset" -> "latest", "enable.auto.commit" -> (false: java.lang.Boolean) ,"sasl.kerberos.service.name" -> "kafka", "security.protocol" -> "SASL_SSL", "ssl.truststore.location" -> "/etc/ssl-conf/truststore.jks", "ssl.truststore.password" -> "xxxxx", "ssl.key.password" -> "xxxxx")
 `)
 
 val topics = Array("test1")
