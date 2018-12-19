@@ -1,6 +1,6 @@
 #### Considerations when using dynamic allocation and the Capacity Scheduler for Spark jobs.
 
-**While using the Capacity Scheduler, the  ```DefaultResourceAllocator``` (default) value causes only memory to be accounted for and not the CPU. This can cause an oversubscription to nodes or cause all containers to run on one node. When dynamic allocation is enabled by default, Spark runs all the executors on a single node does not utilize the cluster efficiently.**
+*While using the Capacity Scheduler, the  ```DefaultResourceAllocator``` (default) value causes only memory to be accounted for and not the CPU. This can cause an oversubscription to nodes or cause all containers to run on one node. When dynamic allocation is enabled by default, Spark runs all the executors on a single node does not utilize the cluster efficiently.*
 
 Cloudera recommends using the Fair Scheduler.
 
