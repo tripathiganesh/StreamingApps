@@ -43,5 +43,9 @@ From Cloudera Manager, navigate to
 
 *Uncheck the default value check box.*
 
-*Save Changes*
-*Restart Spark*
+```diff
++ Save Changes
+- Restart Spark
+```
+
+
