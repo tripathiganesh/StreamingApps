@@ -137,7 +137,7 @@ object LongRunningApp {
 `SerializableConfiguration`
 
 ```scala
-package com.cloudera.test
+package com.cloudera.spark2
 
 import java.io.{ObjectInputStream, ObjectOutputStream}
 
